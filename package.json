@@ -1,0 +1,27 @@
+{
+    "name": "com.dracon.peripherals",
+    "displayName": "Dracon Peripherals",
+    "version": "0.0.1",
+    "unity": "2019.1",
+    "description": "A collection of scripts for the control of game mechanics using peripheral controllers",
+    "keywords": [
+      "controller",
+      "joystick",
+      "peripheral",
+      "unity"
+    ],
+    "samples": [
+      {
+        "displayName": "Vehicle Assets",
+        "description": "E23 vehicle asset for testing with peripheral inputs. Includes peripheral implementations.",
+        "path": "Samples~/Vehicles"
+      }
+    ],
+    "author": {
+      "name": "Dracon Interactive",
+      "email": "draconinteractive@gmail.com",
+      "url": "http://www.draconinteractive.com.au"
+    },
+    "category": "Unity"
+  }
+  
