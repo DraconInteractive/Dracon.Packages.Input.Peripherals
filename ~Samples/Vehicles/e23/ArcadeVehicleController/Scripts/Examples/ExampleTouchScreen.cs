@@ -13,7 +13,7 @@ namespace e23.VehicleController.Demo
         [SerializeField] private bool steerRight;
 #pragma warning restore 0649
 
-        private VehicleSwapper vehicleSwapper;
+        //private VehicleSwapper vehicleSwapper;
         private bool doAction = false;
 
         public VehicleBehaviour VehicleBehaviour
@@ -24,7 +24,7 @@ namespace e23.VehicleController.Demo
 
         private void Awake()
         {
-            vehicleSwapper = FindObjectOfType<VehicleSwapper>();
+            //vehicleSwapper = FindObjectOfType<VehicleSwapper>();
             RegisterActions(true);
         }
 
@@ -40,16 +40,16 @@ namespace e23.VehicleController.Demo
 
         private void RegisterActions(bool register)
         {
-            vehicleSwapper.onVehicleSwapped -= UpdateVehicleBehaviour;
+            //vehicleSwapper.onVehicleSwapped -= UpdateVehicleBehaviour;
 
             if (register == false) { return; }
 
-            vehicleSwapper.onVehicleSwapped += UpdateVehicleBehaviour;
+            //vehicleSwapper.onVehicleSwapped += UpdateVehicleBehaviour;
         }
 
         private void UpdateVehicleBehaviour()
         {
-            VehicleBehaviour = vehicleSwapper.ActiveVehicle;
+            //VehicleBehaviour = vehicleSwapper.ActiveVehicle;
         }
 
         public void OnPointerDown(PointerEventData eventData)
